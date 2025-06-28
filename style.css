@@ -9,7 +9,7 @@
         .project-card { 
             border: 1px solid #ddd; border-radius: 8px; padding: 25px; 
             transition: transform 0.2s, box-shadow 0.2s;
-            background: white;
+            background: white; min-height: 250px;
         }
         .project-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         .project-title { font-size: 1.4em; margin-bottom: 10px; }
