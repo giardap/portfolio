@@ -1,0 +1,403 @@
+[
+  {
+    "name": "ven-pump",
+    "description": null,
+    "html_url": "https://github.com/giardap/ven-pump",
+    "created_at": "2025-05-26T01:37:46Z",
+    "updated_at": "2025-05-26T02:47:52Z",
+    "size": 77388,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "TypeScript": 3099609,
+      "JavaScript": 118702,
+      "CSS": 45627,
+      "HTML": 3068
+    },
+    "commit_count": 30,
+    "readme": "# Vencord\n\n[![Codeberg Mirror](https://img.shields.io/static/v1?style=for-the-badge&label=Codeberg%20Mirror&message=codeberg.org/Vee/cord&color=2185D0&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAKbUlEQVR4nNVae3AV5RX/nW/3Pva+b24e5HHzIICQKGoiYiW8NFBFgohaa6ctglpbFSujSGurzUinohWsOij/gGX6R2fqOK0d1FYTEZXaTrWCBbEikJCEyCvkeXNvkrunf+zdkJDkPnex/c3cmd29+53v/M6e73znnF2Cydj4Tntldzi6qrN/qKqzf2jy6b7BnL4B1dI7oMp9AyoRAIdVsNMqhlxWMZjtspzyK/Jhr036OMsm//bh2vzPzN...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 29.0
+  },
+  {
+    "name": "unruggable.meme",
+    "description": null,
+    "html_url": "https://github.com/giardap/unruggable.meme",
+    "created_at": "2025-01-29T23:43:27Z",
+    "updated_at": "2025-05-27T22:18:07Z",
+    "size": 7251,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "Cairo": 355882,
+      "TypeScript": 316460,
+      "CSS": 25397,
+      "JavaScript": 15952,
+      "HTML": 2898,
+      "Dockerfile": 635,
+      "MDX": 568
+    },
+    "commit_count": 30,
+    "readme": "<!-- prettier-ignore-start -->\n<!-- markdownlint-disable -->\n\n<!-- ************************************* -->\n<!-- *        HEADER WITH LOGO           * -->\n<!-- ************************************* -->\n<p align=\"center\">\n  <img src=\"assets/logo/logo.png\" height=\"256\">\n</p>\n\n<h1 align=\"center\">\u26a1 Unruggable Meme \u26a1</h1>\n\n<p align=\"center\">\n  <strong>\u2623\ufe0f A framework for building safer memecoins \ud83d\udcb8</strong>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://unruggable.meme\">https://unruggable.meme</a>\n</p>\n\n...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 26.251
+  },
+  {
+    "name": "padraig.cf",
+    "description": null,
+    "html_url": "https://github.com/brandonsaldan/padraig.cf",
+    "created_at": "2018-04-11T02:23:00Z",
+    "updated_at": "2018-12-18T05:56:09Z",
+    "size": 21693,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "CSS": 242576,
+      "JavaScript": 67697,
+      "HTML": 18378
+    },
+    "commit_count": 30,
+    "readme": "Unfinished meme website\ntest website for memes.\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 24.0
+  },
+  {
+    "name": "get-pip",
+    "description": null,
+    "html_url": "https://github.com/giardap/get-pip",
+    "created_at": "2025-01-29T23:39:13Z",
+    "updated_at": "2025-05-28T00:53:06Z",
+    "size": 144631,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "Python": 17472666
+    },
+    "commit_count": 30,
+    "readme": "# get-pip.py\n\n`get-pip.py` is a bootstrapping script that enables users to install pip\nin Python environments that don't already have it installed. You\nshould not directly reference the files located in this repository and instead\nuse the versions located at <https://bootstrap.pypa.io/>.\n\n## Usage\n\n```console\n$ curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py\n$ python get-pip.py\n```\n\nUpon execution, `get-pip.py` will install the latest version of `pip` into the\ncurrent Python environ...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 23.0
+  },
+  {
+    "name": "PadraigAIO",
+    "description": "Resources for PadraigAIO",
+    "html_url": "https://github.com/giardap/PadraigAIO",
+    "created_at": "2025-05-27T22:19:49Z",
+    "updated_at": "2025-06-16T23:46:17Z",
+    "size": 3270,
+    "stargazers_count": 4,
+    "forks_count": 0,
+    "languages": {
+      "TypeScript": 1501912
+    },
+    "commit_count": 30,
+    "readme": "<div align=\"center\">\n\n![PadraigAIO Banner](./assets/padraig-banner.png)\n\n# PadraigAIO\n\n**Enhanced Solana token creation and trading directly from Discord**\n\nPadraigAIO is a comprehensive Discord/Vencord plugin that enables seamless creation and trading of Solana tokens through pump.fun, with advanced features like smart contract detection, real-time market data, automated IPFS uploads, and professional token sniping capabilities.\n\n![Plugin Interface](https://img.shields.io/badge/Platform-Discord...",
+    "private": false,
+    "topics": [],
+    "portfolio_score": 22.27
+  },
+  {
+    "name": "ncmchefs.club",
+    "description": "our website ",
+    "html_url": "https://github.com/giardap/ncmchefs.club",
+    "created_at": "2018-11-18T11:24:27Z",
+    "updated_at": "2020-06-06T23:04:42Z",
+    "size": 5396,
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "languages": {
+      "CSS": 5193,
+      "HTML": 3916
+    },
+    "commit_count": 30,
+    "readme": "# ncmchefs.club\nour website \ngang\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 20.396
+  },
+  {
+    "name": "v0-new-project",
+    "description": null,
+    "html_url": "https://github.com/giardap/v0-new-project",
+    "created_at": "2025-05-24T14:09:52Z",
+    "updated_at": "2025-05-24T14:14:52Z",
+    "size": 93,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "TypeScript": 179909,
+      "CSS": 4685,
+      "JavaScript": 3101
+    },
+    "commit_count": 30,
+    "readme": "# New Project\n\n*Automatically synced with your [v0.dev](https://v0.dev) deployments*\n\n[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/giardaps-projects/v0-new-project-ilbglapzurt)\n[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/ilBglApzURt)\n\n## Overview\n\nThis repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 17.093
+  },
+  {
+    "name": "Ring",
+    "description": "Ring Referral exploit.",
+    "html_url": "https://github.com/giardap/Ring",
+    "created_at": "2019-03-26T02:17:52Z",
+    "updated_at": "2025-06-14T00:33:28Z",
+    "size": 38,
+    "stargazers_count": 2,
+    "forks_count": 0,
+    "languages": {
+      "Python": 4272
+    },
+    "commit_count": 30,
+    "readme": "[![License](https://img.shields.io/badge/License-GNU-blue.svg?style=flat-square)](https://github.com/giardap/Ring/blob/master/License.md) ![OS](https://img.shields.io/badge/Tested%20On-Linux%20|%20OSX%20|%20Windows%20|%20Android-yellowgreen.svg?style=flat-square) [![Python2.7](https://img.shields.io/badge/Python-2.7-green.svg?style=flat-square)](https://github.com/giardap/Ring/tree/python2.7) [![Python3](https://img.shields.io/badge/Python-3-green.svg?style=flat-square)](https://github.com/giard...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 17.038
+  },
+  {
+    "name": "AI-Pump",
+    "description": "creating new possibilities within my discord vencord plugin",
+    "html_url": "https://github.com/giardap/AI-Pump",
+    "created_at": "2025-06-07T04:18:08Z",
+    "updated_at": "2025-06-07T17:12:38Z",
+    "size": 296,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "TypeScript": 511548
+    },
+    "commit_count": 30,
+    "readme": "# Coin Creation Plugin\n\n**Enhanced Solana token creation and trading directly from Discord**\n\nPadraigAIO is a comprehensive Discord/Vencord plugin that enables seamless creation and trading of Solana tokens through pump.fun, with advanced features like smart contract detection, real-time market data, and automated IPFS uploads.\n\n![Plugin Interface](https://img.shields.io/badge/Platform-Discord%20%2F%20Vencord-5865F2)\n![Solana](https://img.shields.io/badge/Blockchain-Solana-9945FF)\n![Status](http...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 15.296
+  },
+  {
+    "name": "padraig.tk",
+    "description": null,
+    "html_url": "https://github.com/brandonsaldan/padraig.tk",
+    "created_at": "2018-04-11T05:14:59Z",
+    "updated_at": "2018-06-01T21:59:18Z",
+    "size": 3216,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "CSS": 62239,
+      "HTML": 3316
+    },
+    "commit_count": 30,
+    "readme": "Identity by HTML5 UP\nhtml5up.net | @ajlkn\nFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)\n\n\nJust a fun little profile/card-style template I whipped up during a break between major\nprojects. Minimal, responsive, and powered by Skel + Sass. Enjoy :)\n\nDemo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images\nyou can use for pretty much whatever.\n\n(* = not included)\n\nAJ\naj@lkn.io | @ajlkn\n\n\nCredits:\n\n\tDemo Images:\n\t\tUnsplash (unsplas...",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 15.216000000000001
+  },
+  {
+    "name": "Godslayers",
+    "description": "Website for Godslayers",
+    "html_url": "https://github.com/giardap/Godslayers",
+    "created_at": "2020-04-10T21:07:51Z",
+    "updated_at": "2025-05-27T22:17:37Z",
+    "size": 1,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "HTML": 4
+    },
+    "commit_count": 30,
+    "readme": "# Godslayers\nWebsite for Godslayers\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 15.001
+  },
+  {
+    "name": "giardap.me",
+    "description": "My personal website",
+    "html_url": "https://github.com/giardap/giardap.me",
+    "created_at": "2019-03-26T17:14:23Z",
+    "updated_at": "2025-05-27T22:16:41Z",
+    "size": 36,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {},
+    "commit_count": 30,
+    "readme": "# giardap.me\nMy personal website\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 13.036
+  },
+  {
+    "name": "KHSKiller",
+    "description": "Uhh, gay?",
+    "html_url": "https://github.com/giardap/KHSKiller",
+    "created_at": "2018-10-12T21:35:43Z",
+    "updated_at": "2019-04-01T08:17:34Z",
+    "size": 26,
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "languages": {
+      "HTML": 516
+    },
+    "commit_count": 30,
+    "readme": "# KHSKiller\nUhh, gay?\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 13.026
+  },
+  {
+    "name": "Hunger-Bot",
+    "description": "Hunger Takeover",
+    "html_url": "https://github.com/EricLegend/Hunger-Bot",
+    "created_at": "2019-06-10T12:38:00Z",
+    "updated_at": "2019-07-16T05:14:37Z",
+    "size": 24,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "JavaScript": 26601
+    },
+    "commit_count": 30,
+    "readme": "# Hunger-Bot\nHunger Takeover\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 12.024000000000001
+  },
+  {
+    "name": "FormCook",
+    "description": "Benis",
+    "html_url": "https://github.com/giardap/FormCook",
+    "created_at": "2020-04-22T09:50:12Z",
+    "updated_at": "2020-04-22T09:51:05Z",
+    "size": 1,
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "languages": {},
+    "commit_count": 30,
+    "readme": "# FormCook\nBenis\n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 11.001
+  },
+  {
+    "name": "aceruos.co",
+    "description": "Official Aceruos website.",
+    "html_url": "https://github.com/giardap/aceruos.co",
+    "created_at": "2018-11-14T00:35:27Z",
+    "updated_at": "2025-05-27T22:18:36Z",
+    "size": 123,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "HTML": 16404
+    },
+    "commit_count": 30,
+    "readme": "",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 10.123000000000001
+  },
+  {
+    "name": "padraig-tools",
+    "description": "discord integrated coin creation, adapted for web use.",
+    "html_url": "https://github.com/giardap/padraig-tools",
+    "created_at": "2025-05-24T23:08:40Z",
+    "updated_at": "2025-05-24T23:10:08Z",
+    "size": 106,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "TypeScript": 257690
+    },
+    "commit_count": 30,
+    "readme": "",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 10.106
+  },
+  {
+    "name": "tweakbattle2",
+    "description": "Tweak Battle website ",
+    "html_url": "https://github.com/EricLegend/tweakbattle2",
+    "created_at": "2019-04-13T00:07:47Z",
+    "updated_at": "2019-04-13T00:07:49Z",
+    "size": 0,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {},
+    "commit_count": 30,
+    "readme": "# tweakbattle2\nTweak Battle website \n",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 10.0
+  },
+  {
+    "name": "coin-modal",
+    "description": null,
+    "html_url": "https://github.com/giardap/coin-modal",
+    "created_at": "2025-05-24T12:53:58Z",
+    "updated_at": "2025-05-27T22:19:13Z",
+    "size": 5,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "HTML": 18936
+    },
+    "commit_count": 30,
+    "readme": "",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 8.004999999999999
+  },
+  {
+    "name": "the-ntwrk",
+    "description": null,
+    "html_url": "https://github.com/giardap/the-ntwrk",
+    "created_at": "2019-03-31T03:10:06Z",
+    "updated_at": "2019-03-31T03:10:09Z",
+    "size": 0,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {},
+    "commit_count": 30,
+    "readme": "# the-ntwrk",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 8.0
+  },
+  {
+    "name": "Kiosk",
+    "description": null,
+    "html_url": "https://github.com/giardap/Kiosk",
+    "created_at": "2019-03-21T17:34:18Z",
+    "updated_at": "2019-03-21T17:34:21Z",
+    "size": 0,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {},
+    "commit_count": 30,
+    "readme": "# Kiosk",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 8.0
+  },
+  {
+    "name": "ring-api",
+    "description": "private test shit",
+    "html_url": "https://github.com/giardap/ring-api",
+    "created_at": "2019-01-24T05:20:46Z",
+    "updated_at": "2019-02-28T16:31:33Z",
+    "size": 8,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "languages": {
+      "Python": 2461
+    },
+    "commit_count": 30,
+    "readme": "",
+    "private": true,
+    "topics": [],
+    "portfolio_score": 7.008
+  }
+]
