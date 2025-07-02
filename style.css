@@ -984,9 +984,10 @@ section {
 @media (max-width: 768px) {
     .navbar {
         top: var(--space-md);
-        left: var(--space-md);
-        right: var(--space-md);
-        transform: none;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: calc(100% - 2 * var(--space-md));
         padding: var(--space-sm) var(--space-lg);
         border-radius: var(--radius-lg);
     }
