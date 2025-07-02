@@ -1,0 +1,26 @@
+{
+  "name": "giardap-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing blockchain development and security research",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static site - no build needed'",
+    "preview": "serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@iconify-json/devicon-plain": "^1.2.3",
+    "@iconify-json/skill-icons": "^1.1.8",
+    "@iconify/iconify": "^3.1.1",
+    "serve": "^14.2.3"
+  },
+  "keywords": [
+    "portfolio",
+    "blockchain",
+    "security",
+    "web-development"
+  ],
+  "author": "Giardap",
+  "license": "MIT"
+}
