@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="icons.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -17,19 +18,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link active"><span class="nav-icon"></span>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link"><span class="nav-icon"></span>About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link"><span class="nav-icon"></span>Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link"><span class="nav-icon"></span>Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link"><span class="nav-icon"></span>Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -46,11 +47,11 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm <span class="highlight">Giardap</span></h1>
-                    <h2>Blockchain Developer & Cybersecurity Researcher</h2>
-                    <p>Independent cybersecurity researcher and freelance blockchain developer specializing in Solana ecosystem development, vulnerability research, and secure DeFi solutions. Building innovative applications while exploring and analyzing security vulnerabilities in software systems.</p>
+                    <h2>Blockchain Developer & Security Researcher</h2>
+                    <p>I build secure applications and explore vulnerabilities in software systems. Currently focused on Solana development and creating tools that bridge complex technology with user-friendly interfaces.</p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary">View My Work <span class="btn-icon"></span></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch <span class="btn-icon"></span></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -67,24 +68,34 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>I'm a cybersecurity researcher and full-stack blockchain engineer with expertise in vulnerability assessment, penetration testing, and high-performance system development. My background spans from security research and exploit development to advanced blockchain protocols and trading systems. I specialize in building secure, scalable solutions while actively researching security vulnerabilities through responsible disclosure, combining deep technical knowledge in cryptography, reverse engineering, and distributed systems architecture.</p>
+                        <p>I'm a developer focused on building secure applications and conducting security research. My work spans blockchain development, vulnerability assessment, and creating tools that solve real problems. I believe in responsible disclosure and contributing to the security community through research and open-source projects.</p>
                         <div class="skills">
-                            <h3>Core Technologies</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">TypeScript/JavaScript</span>
-                                <span class="skill-tag">Solana/Web3.js</span>
-                                <span class="skill-tag">Swift/SwiftUI</span>
-                                <span class="skill-tag">Cairo/Starknet</span>
-                                <span class="skill-tag">React/Redux</span>
-                                <span class="skill-tag">Python/TensorFlow</span>
-                                <span class="skill-tag">Discord APIs</span>
-                                <span class="skill-tag">Node.js/Electron</span>
-                                <span class="skill-tag">Smart Contracts</span>
-                                <span class="skill-tag">Machine Learning</span>
-                                <span class="skill-tag">WebSocket/RPC</span>
-                                <span class="skill-tag">Cryptography</span>
-                                <span class="skill-tag">System Architecture</span>
-                                <span class="skill-tag">Performance Optimization</span>
+                            <h3>Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span>Blockchain Development</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Solana Ecosystem Expert</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Security Research & Vulnerability Assessment</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Smart Contract Engineering</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>TypeScript/JavaScript Development</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Swift/SwiftUI Native Development</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>React/Redux Frontend Architecture</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Discord Bot Development & Automation</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,22 +123,20 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <!-- PadraigAIO Project -->
-                    <div class="project-card featured">
+                    <div class="project-card">
                         <div class="project-header">
                             <div class="project-icon">
                                 <i class="fab fa-ethereum"></i>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/PadraigAIO" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>PadraigAIO</h3>
-                            <p><strong>Technical Mastery:</strong> Enterprise-grade Solana trading infrastructure leveraging advanced TypeScript patterns, async/await concurrency, and Web3.js SDK integration. Implements real-time WebSocket connections to Solana RPC nodes with custom retry logic and connection pooling.</p>
-                            <p><strong>Core Systems:</strong> Custom-built transaction simulation engine using Solana's getProgramAccounts filtering, automated IPFS pinning via Pinata API, and sophisticated smart contract analysis through bytecode inspection. Features MEV-resistant transaction bundling with priority fee optimization and slippage protection algorithms.</p>
-                            <p><strong>Architecture:</strong> Modular Discord/Vencord plugin architecture with React-based UI components, real-time state management using Redux patterns, and secure wallet integration supporting multiple keypair formats. Implements professional-grade error handling, logging systems, and comprehensive test coverage.</p>
+                            <p>A comprehensive Solana trading suite built as a Discord plugin. Features real-time market data, automated token creation, smart contract analysis, and advanced trading algorithms. Built with TypeScript, React, and Web3.js for seamless integration with the Solana ecosystem.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">TypeScript</span>
                                 <span class="tech-tag">Solana</span>
@@ -139,15 +148,9 @@
                                     <i class="fas fa-star"></i> 4 stars
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> 0 forks
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> 3.2MB
+                                    <i class="fas fa-code-branch"></i> TypeScript
                                 </span>
                             </div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="featured-badge">Featured</span>
                         </div>
                     </div>
 
@@ -159,15 +162,13 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/Ring" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Ring Referral System</h3>
-                            <p><strong>Advanced Automation:</strong> Sophisticated Python automation framework utilizing Selenium WebDriver with custom anti-detection techniques. Implements browser fingerprint randomization, user-agent rotation, and canvas fingerprinting bypass through controlled browser automation.</p>
-                            <p><strong>Infrastructure Management:</strong> Dynamic proxy rotation system with health monitoring, IP geolocation verification, and automatic failover mechanisms. Features intelligent session management, cookie persistence, and CAPTCHA solving integration using computer vision techniques.</p>
-                            <p><strong>Technical Implementation:</strong> Multi-threaded architecture with async/await patterns, comprehensive logging systems, and rate limiting algorithms. Includes data persistence through SQLite, configuration management, and robust error recovery mechanisms for 24/7 operation.</p>
+                            <p>Automated referral system for Ring services with advanced anti-detection capabilities. Features proxy rotation, intelligent session management, and automated account creation. Built with Python and Selenium for reliable, undetected operation.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Automation</span>
@@ -179,10 +180,7 @@
                                     <i class="fas fa-star"></i> 2 stars
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> 0 forks
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> 38KB
+                                    <i class="fas fa-code-branch"></i> Python
                                 </span>
                             </div>
                         </div>
@@ -196,15 +194,13 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/unruggable.meme" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Unruggable.meme</h3>
-                            <p><strong>Blockchain Architecture:</strong> Full-stack DeFi platform leveraging Starknet's Cairo VM for zero-knowledge proof execution. Implements custom Cairo smart contracts with advanced tokenomics including automatic liquidity locks, time-based vesting schedules, and community-governed parameter updates.</p>
-                            <p><strong>Smart Contract Engineering:</strong> Cairo-based contract system featuring rugpull-resistant mechanisms through immutable liquidity locks, multi-signature treasury management, and automated token burning algorithms. Includes comprehensive unit testing, formal verification, and gas optimization techniques.</p>
-                            <p><strong>Frontend Innovation:</strong> React-based dApp with Web3 wallet integration, real-time blockchain state synchronization, and TypeScript type safety. Features responsive design patterns, state management through Redux Toolkit, and comprehensive error boundary implementation for robust user experience.</p>
+                            <p>A DeFi platform on Starknet focused on creating rugpull-resistant meme tokens. Features automatic liquidity locks, community governance, and smart contract security mechanisms. Built with Cairo smart contracts and a React frontend.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Cairo</span>
                                 <span class="tech-tag">Starknet</span>
@@ -214,13 +210,10 @@
                             </div>
                             <div class="project-stats">
                                 <span class="stat-item">
-                                    <i class="fas fa-star"></i> 0 stars
+                                    <i class="fas fa-star"></i> Open Source
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> 0 forks
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> 7.2MB
+                                    <i class="fas fa-code-branch"></i> Cairo
                                 </span>
                             </div>
                         </div>
@@ -234,15 +227,13 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/PadraigAIO-MacOS" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>PadraigAIO macOS</h3>
-                            <p><strong>Native iOS/macOS Development:</strong> Sophisticated Swift application leveraging SwiftUI's declarative framework with Combine reactive programming. Implements Core Data persistence, CloudKit synchronization, and advanced UI animations using SwiftUI's animation system and custom view modifiers.</p>
-                            <p><strong>Financial Systems Integration:</strong> Real-time market data processing through WebSocket connections with custom JSON parsing, portfolio analytics using statistical algorithms, and automated trading strategy execution. Features secure keychain integration, biometric authentication, and encrypted data storage.</p>
-                            <p><strong>System Architecture:</strong> MVVM architecture pattern with dependency injection, comprehensive unit/UI testing using XCTest framework, and performance optimization through lazy loading and memory management. Includes background task scheduling, push notification handling, and seamless cross-device synchronization.</p>
+                            <p>Native macOS application for Solana trading and portfolio management. Built with Swift and SwiftUI, featuring real-time market data, automated trading strategies, and a clean, intuitive interface designed specifically for macOS users.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Swift</span>
                                 <span class="tech-tag">SwiftUI</span>
@@ -251,13 +242,10 @@
                             </div>
                             <div class="project-stats">
                                 <span class="stat-item">
-                                    <i class="fas fa-star"></i> New
+                                    <i class="fas fa-star"></i> Active
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> Active Dev
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> Native
+                                    <i class="fas fa-code-branch"></i> Swift
                                 </span>
                             </div>
                         </div>
@@ -271,15 +259,13 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/ven-pump" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Ven-Pump</h3>
-                            <p><strong>Discord Client Engineering:</strong> Advanced Electron application modification leveraging Discord's internal APIs through reverse engineering and runtime patching. Implements custom webpack loaders, module injection systems, and hot-reloading capabilities for seamless plugin development.</p>
-                            <p><strong>Plugin Architecture:</strong> Sophisticated plugin framework with 100+ modules featuring React component injection, CSS-in-JS styling systems, and comprehensive API abstractions. Includes plugin sandboxing, dependency management, and automatic update mechanisms with rollback capabilities.</p>
-                            <p><strong>Advanced Features:</strong> Real-time message interception and modification, custom UI component rendering through React portals, and extensive Discord API integration including voice/video enhancements. Features TypeScript-based plugin development, comprehensive testing frameworks, and performance monitoring systems.</p>
+                            <p>Enhanced Discord client modification with 100+ built-in plugins. Features advanced plugin architecture, trading integrations, and UI enhancements. Built with TypeScript and React for extensible Discord functionality.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">TypeScript</span>
                                 <span class="tech-tag">React</span>
@@ -288,13 +274,10 @@
                             </div>
                             <div class="project-stats">
                                 <span class="stat-item">
-                                    <i class="fas fa-star"></i> Fork
+                                    <i class="fas fa-star"></i> 100+ Plugins
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> 100+ Plugins
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> 77MB
+                                    <i class="fas fa-code-branch"></i> TypeScript
                                 </span>
                             </div>
                         </div>
@@ -308,15 +291,13 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/giardap/AI-Pump" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
+                                    <span class="project-github-icon"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>AI-Pump</h3>
-                            <p><strong>Machine Learning Integration:</strong> Advanced AI-powered trading system utilizing TensorFlow.js for real-time price prediction models, natural language processing for sentiment analysis, and reinforcement learning algorithms for automated trading strategy optimization.</p>
-                            <p><strong>Data Science Pipeline:</strong> Comprehensive data ingestion system processing social media sentiment, technical indicators, and blockchain metrics. Implements feature engineering pipelines, time-series analysis, and ensemble learning methods for market prediction accuracy.</p>
-                            <p><strong>Bot Architecture:</strong> Scalable Discord bot framework with WebSocket-based real-time communication, database integration through PostgreSQL, and distributed computing capabilities. Features custom neural network architectures, backtesting frameworks, and risk management algorithms with dynamic position sizing.</p>
+                            <p>Intelligent Discord bot for cryptocurrency trading with AI-powered market analysis. Features sentiment analysis, price prediction models, and automated trading decisions. Built with TypeScript and machine learning frameworks.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">TypeScript</span>
                                 <span class="tech-tag">AI/ML</span>
@@ -325,13 +306,10 @@
                             </div>
                             <div class="project-stats">
                                 <span class="stat-item">
-                                    <i class="fas fa-star"></i> Beta
+                                    <i class="fas fa-star"></i> AI-Powered
                                 </span>
                                 <span class="stat-item">
-                                    <i class="fas fa-code-branch"></i> AI-Powered
-                                </span>
-                                <span class="stat-item">
-                                    <i class="fas fa-file-code"></i> 296KB
+                                    <i class="fas fa-code-branch"></i> TypeScript
                                 </span>
                             </div>
                         </div>
@@ -351,12 +329,12 @@
                         <div class="experience-content">
                             <h3>Freelance Blockchain Developer</h3>
                             <h4>Solana Ecosystem • Remote</h4>
-                            <p>Leading independent development in the Solana ecosystem, architecting custom trading infrastructure, automation frameworks, and DeFi protocols. Specializing in pump.fun and Tensor integrations, building high-performance RESTful APIs, and developing sophisticated on-chain interaction systems using Python, Rust, and React.</p>
+                            <p>Building trading tools and DeFi applications in the Solana ecosystem. Focused on creating efficient, user-friendly interfaces for complex blockchain interactions.</p>
                             <ul>
-                                <li>Designed and implemented custom trading tools with real-time Solana RPC integration</li>
-                                <li>Built automated token creation and management systems for DeFi workflows</li>
-                                <li>Developed minimal React interfaces for on-chain data visualization and tool management</li>
-                                <li>Optimized backend services for high-frequency trading operations</li>
+                                <li>Custom trading tools with real-time Solana integration</li>
+                                <li>Automated token creation and management systems</li>
+                                <li>Clean React interfaces for blockchain data visualization</li>
+                                <li>High-performance backend services for trading operations</li>
                             </ul>
                         </div>
                     </div>
@@ -367,12 +345,12 @@
                         <div class="experience-content">
                             <h3>Independent Cybersecurity Researcher</h3>
                             <h4>Vulnerability Research & Responsible Disclosure</h4>
-                            <p>Conducting advanced security research focusing on consumer platforms and software vulnerabilities. Discovered critical flaws including Ring referral system exploits and Mercari platform vulnerabilities, with emphasis on responsible disclosure and community knowledge sharing.</p>
+                            <p>Security research focused on consumer platforms and software vulnerabilities. Committed to responsible disclosure and contributing to the security community.</p>
                             <ul>
-                                <li>Discovered and documented critical vulnerabilities in Ring's referral system enabling unlimited device rewards</li>
-                                <li>Developed custom iOS jailbreak tweaks for mobile security boundary testing</li>
-                                <li>Conducted comprehensive penetration testing and vulnerability assessments</li>
-                                <li>Published technical write-ups contributing to cybersecurity knowledge base</li>
+                                <li>Discovered critical vulnerabilities in Ring's referral system</li>
+                                <li>Developed iOS security testing tools and jailbreak tweaks</li>
+                                <li>Conducted penetration testing and vulnerability assessments</li>
+                                <li>Published technical research and security write-ups</li>
                             </ul>
                         </div>
                     </div>
@@ -383,7 +361,7 @@
                         <div class="experience-content">
                             <h3>Independent Contractor</h3>
                             <h4>Guardian Asset Management • Langhorne, PA</h4>
-                            <p>Provided specialized property preservation and inspection services for mortgage servicing companies, ensuring compliance with HUD and investor guidelines through detailed documentation and systematic property management protocols.</p>
+                            <p>Property preservation and inspection services for mortgage companies. Focused on compliance, documentation, and systematic property management.</p>
                         </div>
                     </div>
 
@@ -393,14 +371,14 @@
                         <div class="experience-content">
                             <h3>Operations Manager</h3>
                             <h4>Castle Billiards & Jim Dandy's • East Rutherford, NJ</h4>
-                            <p>Led daily operations, team management, and business performance optimization in high-pressure hospitality environments. Developed leadership, multitasking, and conflict-resolution skills directly applicable to technical team environments and incident response scenarios.</p>
+                            <p>Operations management in fast-paced hospitality environments. Developed leadership, team coordination, and problem-solving skills.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Education -->
                 <div class="education-section">
-                    <h3>Education</h3>
+                    <h3><span class="education-icon"></span>Education</h3>
                     <div class="education-item">
                         <div class="education-content">
                             <h4>Computer Science</h4>
@@ -421,11 +399,11 @@
                     </div>
                     <div class="contact-links">
                         <a href="https://github.com/giardap" target="_blank" class="contact-link">
-                            <i class="fab fa-github"></i>
+                            <span class="contact-icon"></span>
                             <span>GitHub</span>
                         </a>
                         <a href="mailto:padraigm27@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
+                            <span class="contact-icon"></span>
                             <span>Email</span>
                         </a>
                         <a href="#" class="contact-link">
@@ -438,9 +416,30 @@
         </section>
     </main>
 
+    <!-- Floating Dock Navigation (Darko Style) -->
+    <div class="floating-dock">
+        <div class="dock-container">
+            <a href="#home" class="dock-item" title="Home">
+                <span class="dock-icon"></span>
+            </a>
+            <a href="#about" class="dock-item" title="About">
+                <span class="dock-icon"></span>
+            </a>
+            <a href="#projects" class="dock-item" title="Projects">
+                <span class="dock-icon"></span>
+            </a>
+            <a href="#experience" class="dock-item" title="Experience">
+                <span class="dock-icon"></span>
+            </a>
+            <a href="#contact" class="dock-item" title="Contact">
+                <span class="dock-icon"></span>
+            </a>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Giardap. Built with passion for blockchain technology.</p>
+            <p>&copy; 2025 Giardap</p>
         </div>
     </footer>
 
@@ -474,14 +473,35 @@
             });
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+        // Active navigation tracking with intersection observer
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    
+                    // Remove active class from all nav links
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Add active class to current section's nav link
+                    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-100px 0px -60% 0px'
+        });
+
+        // Observe all sections
+        sections.forEach(section => {
+            navObserver.observe(section);
         });
 
         // Add animation on scroll
@@ -502,6 +522,253 @@
         document.querySelectorAll('section, .project-card').forEach(el => {
             observer.observe(el);
         });
+
+        // Initialize Phosphor icons
+        function initializeIcons() {
+            // Navigation icons
+            const navIcons = document.querySelectorAll('.nav-icon');
+            const iconMap = {
+                '#home': 'House',
+                '#about': 'Globe', 
+                '#projects': 'StackSimple',
+                '#experience': 'GraduationCap',
+                '#contact': 'At'
+            };
+            
+            navIcons.forEach((iconEl, index) => {
+                const link = iconEl.parentElement;
+                const href = link.getAttribute('href');
+                const iconName = iconMap[href];
+                if (iconName && window.PhosphorIcons && window.PhosphorIcons[iconName]) {
+                    iconEl.innerHTML = window.PhosphorIcons[iconName];
+                }
+            });
+
+            // Button icons (ArrowRight)
+            const btnIcons = document.querySelectorAll('.btn-icon');
+            btnIcons.forEach(iconEl => {
+                if (window.PhosphorIcons && window.PhosphorIcons.ArrowRight) {
+                    iconEl.innerHTML = window.PhosphorIcons.ArrowRight;
+                }
+            });
+
+            // Education icon
+            const educationIcon = document.querySelector('.education-icon');
+            if (educationIcon && window.PhosphorIcons && window.PhosphorIcons.GraduationCap) {
+                educationIcon.innerHTML = window.PhosphorIcons.GraduationCap;
+            }
+
+            // Contact icons
+            const contactIcons = document.querySelectorAll('.contact-icon');
+            contactIcons.forEach((iconEl, index) => {
+                const link = iconEl.parentElement;
+                const href = link.getAttribute('href');
+                if (href.includes('github') && window.PhosphorIcons && window.PhosphorIcons.GitHub) {
+                    iconEl.innerHTML = window.PhosphorIcons.GitHub;
+                } else if (href.includes('mailto') && window.PhosphorIcons && window.PhosphorIcons.At) {
+                    iconEl.innerHTML = window.PhosphorIcons.At;
+                }
+            });
+
+            // Project GitHub icons
+            const projectGitHubIcons = document.querySelectorAll('.project-github-icon');
+            projectGitHubIcons.forEach(iconEl => {
+                if (window.PhosphorIcons && window.PhosphorIcons.GitHub) {
+                    iconEl.innerHTML = window.PhosphorIcons.GitHub;
+                }
+            });
+        }
+        
+        // Initialize icons when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeIcons);
+        } else {
+            initializeIcons();
+        }
+
+        // Navbar scroll behavior - hide top navbar when scrolling down
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        const floatingDock = document.querySelector('.floating-dock');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                // Not at top - hide top navbar, enhance dock
+                navbar.style.transform = 'translateX(-50%) translateY(-100%)';
+                navbar.style.opacity = '0';
+                floatingDock.classList.add('enhanced');
+            } else {
+                // At top of page - show top navbar, normal dock
+                navbar.style.transform = 'translateX(-50%) translateY(0)';
+                navbar.style.opacity = '1';
+                floatingDock.classList.remove('enhanced');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Fix for mobile bounce
+        });
+
+        // Floating Dock Functionality
+        function initializeFloatingDock() {
+            const dockItems = document.querySelectorAll('.dock-item');
+            const dockIcons = document.querySelectorAll('.dock-icon');
+            
+            // Add icons to dock
+            const dockIconMap = {
+                '#home': 'House',
+                '#about': 'Globe', 
+                '#projects': 'StackSimple',
+                '#experience': 'GraduationCap',
+                '#contact': 'At'
+            };
+            
+            dockIcons.forEach((iconEl, index) => {
+                const link = iconEl.parentElement;
+                const href = link.getAttribute('href');
+                const iconName = dockIconMap[href];
+                if (iconName && window.PhosphorIcons && window.PhosphorIcons[iconName]) {
+                    iconEl.innerHTML = window.PhosphorIcons[iconName];
+                }
+            });
+
+            // Active state tracking for dock
+            const sections = document.querySelectorAll('section[id]');
+            
+            const dockObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        
+                        dockItems.forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        
+                        const activeItem = document.querySelector(`.dock-item[href="#${id}"]`);
+                        if (activeItem) {
+                            activeItem.classList.add('active');
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.3,
+                rootMargin: '-100px 0px -60% 0px'
+            });
+
+            sections.forEach(section => {
+                dockObserver.observe(section);
+            });
+        }
+
+        // Initialize floating dock
+        initializeFloatingDock();
+
     </script>
+
+    <style>
+        /* Icon styling */
+        .nav-icon {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .nav-icon svg {
+            width: 18px;
+            height: 18px;
+            color: var(--color-text-secondary);
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link.active .nav-icon svg,
+        .nav-link:hover .nav-icon svg {
+            color: var(--color-accent-purple);
+        }
+        
+        .btn-icon {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+        }
+        
+        .btn-icon svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s ease;
+        }
+        
+        .btn:hover .btn-icon svg {
+            transform: translateX(2px);
+        }
+        
+        .education-icon {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .education-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--color-accent-purple);
+        }
+        
+        .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--color-text-secondary);
+            transition: color 0.2s ease;
+        }
+        
+        .contact-link:hover .contact-icon svg {
+            color: var(--color-accent-purple);
+        }
+        
+        .project-github-icon {
+            display: inline-flex;
+            align-items: center;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .project-github-icon svg {
+            width: 18px;
+            height: 18px;
+            color: var(--color-text-secondary);
+            transition: color 0.2s ease;
+        }
+        
+        .project-link:hover .project-github-icon svg {
+            color: var(--color-accent-purple);
+        }
+        
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .nav-icon {
+                width: 16px;
+                height: 16px;
+                margin-right: 6px;
+            }
+            
+            .nav-icon svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
 </body>
 </html>
