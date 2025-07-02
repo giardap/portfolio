@@ -834,17 +834,16 @@
             .navbar {
                 display: flex !important;
                 visibility: visible !important;
-                opacity: 1 !important;
-                transform: none !important;
-                justify-content: center !important;
+                position: fixed !important;
+                top: 1.5rem !important;
+                left: 50% !important;
+                /* Don't override transform/opacity with !important - let JS handle scroll behavior */
             }
             
             .nav-container {
                 display: flex !important;
                 align-items: center !important;
-                justify-content: space-between !important;
-                width: calc(100% - 2rem) !important;
-                max-width: 600px !important;
+                gap: 2rem !important;
             }
             
             .hero-content {
@@ -871,16 +870,39 @@
         .nav-link:focus,
         .dock-item:focus,
         .nav-link:focus-visible,
-        .dock-item:focus-visible {
+        .dock-item:focus-visible,
+        .nav-link:active,
+        .dock-item:active {
             outline: none !important;
             box-shadow: none !important;
             border: none !important;
+            background: transparent !important;
         }
         
         .nav-link:focus .nav-icon svg,
-        .dock-item:focus svg {
+        .dock-item:focus svg,
+        .nav-link:active .nav-icon svg,
+        .dock-item:active svg {
             outline: none !important;
             box-shadow: none !important;
+            background: transparent !important;
+        }
+        
+        /* Specific fix for about icon purple background */
+        .nav-link[href="#about"]:focus,
+        .nav-link[href="#about"]:active,
+        .nav-link[href="#about"]:focus-visible,
+        .dock-item[href="#about"]:focus,
+        .dock-item[href="#about"]:active,
+        .dock-item[href="#about"]:focus-visible {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        
+        .nav-link[href="#about"] .nav-icon,
+        .dock-item[href="#about"] .dock-icon {
+            background: transparent !important;
+            background-color: transparent !important;
         }
         
         /* Remove all focus states that cause purple boxes */
@@ -890,6 +912,110 @@
         
         *:focus-visible {
             outline: 2px solid transparent !important;
+        }
+        
+        /* Override any browser default focus styles */
+        a:focus,
+        a:active,
+        button:focus,
+        button:active {
+            background: transparent !important;
+            background-color: transparent !important;
+            outline: none !important;
+        }
+        
+        /* GLOBAL OVERRIDE - FORCE ALL DOCK ITEMS TO SHOW PURPLE WHEN ACTIVE */
+        a[class*="dock-item"]:not(:hover) {
+            color: var(--color-text-secondary) !important;
+            background: transparent !important;
+        }
+        
+        a[class*="dock-item"].active,
+        a[href="#home"].active,
+        a[href="#about"].active,
+        a[href="#projects"].active,
+        a[href="#experience"].active,
+        a[href="#research"].active,
+        a[href="#contact"].active {
+            background: transparent !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: var(--color-accent-purple) !important;
+        }
+        
+        .floating-dock .dock-item.active svg,
+        .floating-dock .dock-item.active .dock-icon svg,
+        .dock-container .dock-item.active svg,
+        .dock-container .dock-item.active .dock-icon svg,
+        .dock-item.active svg,
+        .dock-item.active .dock-icon svg,
+        .dock-item[href="#home"].active svg,
+        .dock-item[href="#about"].active svg,
+        .dock-item[href="#projects"].active svg,
+        .dock-item[href="#experience"].active svg,
+        .dock-item[href="#research"].active svg,
+        .dock-item[href="#contact"].active svg,
+        .dock-item[href="#home"].active .dock-icon svg,
+        .dock-item[href="#about"].active .dock-icon svg,
+        .dock-item[href="#projects"].active .dock-icon svg,
+        .dock-item[href="#experience"].active .dock-icon svg,
+        .dock-item[href="#research"].active .dock-icon svg,
+        .dock-item[href="#contact"].active .dock-icon svg {
+            color: var(--color-accent-purple) !important;
+        }
+        
+        .dock-item.active::before,
+        .dock-item[href="#home"].active::before,
+        .dock-item[href="#about"].active::before,
+        .dock-item[href="#projects"].active::before,
+        .dock-item[href="#experience"].active::before,
+        .dock-item[href="#research"].active::before,
+        .dock-item[href="#contact"].active::before {
+            display: none !important;
+        }
+        
+        .dock-item:hover {
+            background: rgba(255, 255, 255, 0.05) !important;
+            color: var(--color-text-primary) !important;
+        }
+        
+        .dock-item:hover svg,
+        .dock-item:hover .dock-icon svg {
+            color: var(--color-text-primary) !important;
+        }
+        
+        /* Ensure nav active states don't have backgrounds either but keep color */
+        .nav-link.active,
+        .nav-link[href="#home"].active,
+        .nav-link[href="#about"].active,
+        .nav-link[href="#projects"].active,
+        .nav-link[href="#experience"].active,
+        .nav-link[href="#research"].active,
+        .nav-link[href="#contact"].active {
+            background: transparent !important;
+            background-color: transparent !important;
+            color: var(--color-accent-purple) !important;
+        }
+        
+        .nav-link.active svg,
+        .nav-link.active .nav-icon svg,
+        .nav-link[href="#home"].active svg,
+        .nav-link[href="#about"].active svg,
+        .nav-link[href="#projects"].active svg,
+        .nav-link[href="#experience"].active svg,
+        .nav-link[href="#research"].active svg,
+        .nav-link[href="#contact"].active svg {
+            color: var(--color-accent-purple) !important;
+        }
+        
+        .nav-link.active::before,
+        .nav-link[href="#home"].active::before,
+        .nav-link[href="#about"].active::before,
+        .nav-link[href="#projects"].active::before,
+        .nav-link[href="#experience"].active::before,
+        .nav-link[href="#research"].active::before,
+        .nav-link[href="#contact"].active::before {
+            display: none !important;
         }
         
         /* CRITICAL MOBILE FIXES - INLINE TO FORCE OVERRIDE */
