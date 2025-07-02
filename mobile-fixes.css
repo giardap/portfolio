@@ -1,0 +1,159 @@
+/* Enhanced Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Navbar Mobile Fixes */
+    .navbar {
+        top: var(--space-md);
+        width: calc(100% - 2rem);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: var(--space-sm);
+    }
+    
+    .nav-container {
+        gap: var(--space-md);
+    }
+    
+    .nav-menu {
+        gap: var(--space-xs);
+    }
+    
+    .nav-link {
+        padding: var(--space-xs);
+        font-size: 0.75rem;
+    }
+    
+    /* Better Mobile Spacing */
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    /* Compact Sections */
+    section {
+        padding: var(--space-2xl) 0;
+    }
+    
+    .hero {
+        padding: var(--space-3xl) 0;
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-xl);
+    }
+    
+    .hero-text {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+    }
+    
+    .profile-circle {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    
+    /* Compact About Section */
+    .about-content {
+        flex-direction: column;
+        gap: var(--space-xl);
+    }
+    
+    .about-stats {
+        justify-content: center;
+        gap: var(--space-md);
+    }
+    
+    /* More Compact Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+    
+    .skill-item {
+        padding: var(--space-md);
+        font-size: 0.875rem;
+    }
+    
+    /* Compact Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .project-card {
+        padding: var(--space-lg);
+    }
+    
+    /* Compact Research Section */
+    .research-project {
+        margin-bottom: var(--space-xl);
+    }
+    
+    .technical-details,
+    .project-description {
+        margin-bottom: var(--space-md);
+    }
+    
+    .results-grid,
+    .significance-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .disclosure-steps {
+        gap: var(--space-md);
+    }
+    
+    /* Hide hamburger if not needed */
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Extra Mobile Optimizations for Small Phones */
+@media (max-width: 480px) {
+    /* Extra compact for small phones */
+    .navbar {
+        width: calc(100% - 1rem);
+        padding: var(--space-xs);
+    }
+    
+    .nav-logo h2 {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
+    section {
+        padding: var(--space-xl) 0;
+    }
+    
+    .hero {
+        padding: var(--space-2xl) 0;
+        min-height: 70vh;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 0.875rem;
+    }
+    
+    .project-card {
+        padding: var(--space-md);
+    }
+}

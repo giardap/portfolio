@@ -202,7 +202,7 @@ p {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 var(--space-xl);
-}\n\n/* Modular Section System */\n.section-wrapper {\n    position: relative;\n    margin: var(--space-5xl) 0;\n    padding: var(--space-4xl) 0;\n}\n\n.section-wrapper::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 100px;\n    height: 1px;\n    background: linear-gradient(90deg, transparent, var(--color-accent-purple), transparent);\n    opacity: 0.3;\n}\n\n.section-card {\n    background: var(--color-bg-section);\n    border: 1px solid var(--glass-border);\n    border-radius: var(--radius-2xl);\n    padding: var(--space-3xl);\n    margin: var(--space-2xl) 0;\n    backdrop-filter: var(--glass-blur);\n    box-shadow: var(--shadow-lg);\n    position: relative;\n    overflow: hidden;\n    transition: all var(--duration-normal) var(--ease-out-cubic);\n}\n\n.section-card::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 1px;\n    background: linear-gradient(90deg, transparent, var(--color-accent-purple), transparent);\n    opacity: 0.5;\n}\n\n.section-card:hover {\n    transform: translateY(-2px);\n    box-shadow: var(--shadow-xl);\n    border-color: var(--glass-border-strong);\n}\n\n/* Enhanced Grid System */\n.modular-grid {\n    display: grid;\n    gap: var(--space-xl);\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.modular-grid.cols-2 {\n    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));\n}\n\n.modular-grid.cols-3 {\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.modular-grid.cols-4 {\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n}\n\n/* Enhanced Card Components */\n.card {\n    background: var(--color-bg-card);\n    border: 1px solid var(--glass-border);\n    border-radius: var(--radius-xl);\n    padding: var(--space-xl);\n    transition: all var(--duration-normal) var(--ease-out-cubic);\n    position: relative;\n    overflow: hidden;\n    box-shadow: var(--shadow-md);\n}\n\n.card::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(135deg, var(--color-accent-purple-glow) 0%, transparent 50%);\n    opacity: 0;\n    transition: opacity var(--duration-normal) var(--ease-out-cubic);\n    pointer-events: none;\n}\n\n.card:hover {\n    transform: translateY(-4px);\n    box-shadow: var(--shadow-xl);\n    border-color: var(--glass-border-strong);\n}\n\n.card:hover::before {\n    opacity: 0.1;\n}\n\n.card-elevated {\n    background: var(--color-bg-card-elevated);\n    box-shadow: var(--shadow-lg);\n    z-index: var(--elevation-2);\n}\n\n.card-elevated:hover {\n    box-shadow: var(--shadow-2xl);\n    z-index: var(--elevation-4);\n}
+}
 
 /* Floating Navigation */
 .navbar {
@@ -217,6 +217,8 @@ p {
     border-radius: var(--radius-pill);
     padding: var(--space-sm) var(--space-lg);
     transition: all 0.3s ease;
+    width: calc(100% - 2rem);
+    max-width: 600px;
 }
 
 .nav-container {
