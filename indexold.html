@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Giardap - Blockchain Developer Portfolio</title>
+    <meta name="description" content="Blockchain Developer & Security Researcher specializing in Solana ecosystem, smart contracts, and cybersecurity research.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg-primary: rgb(23, 23, 23);
+            --color-bg-secondary: rgb(38, 38, 38);
+            --color-bg-tertiary: rgb(26, 26, 26);
+            --color-text-primary: rgb(230, 230, 230);
+            --color-text-secondary: rgb(153, 153, 153);
+            --color-accent-purple: rgb(172, 153, 255);
+            --color-accent-green: rgb(0, 204, 150);
+            --glass-bg: rgba(15, 15, 15, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-blur: blur(9px);
+            --space-xs: 8px;
+            --space-sm: 12px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-pill: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: var(--space-lg);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-pill);
+            padding: var(--space-sm);
+            box-shadow: 0px 0.6px 0.6px -1.25px rgba(0, 0, 0, 0.18), 
+                        0px 2.3px 2.3px -2.5px rgba(0, 0, 0, 0.16), 
+                        0px 10px 10px -3.75px rgba(0, 0, 0, 0.0625);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--space-xs);
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: var(--space-sm) var(--space-md);
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-md);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link.active {
+            background: var(--color-bg-secondary);
+            color: var(--color-text-primary);
+            box-shadow: 0px 0.6px 0.6px -1.25px rgba(0, 0, 0, 0.18);
+        }
+
+        .nav-link.active::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 6px;
+            height: 6px;
+            background: var(--color-accent-purple);
+            border-radius: 50%;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 120px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: var(--space-lg);
+            padding-right: var(--space-lg);
+        }
+
+        .section {
+            margin-bottom: 120px;
+        }
+
+        .section-title {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-xl);
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 0 120px;
+        }
+
+        .hero-title {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-md);
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--color-accent-purple);
+            margin-bottom: var(--space-md);
+            font-weight: 500;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+            line-height: 1.6;
+        }
+
+        .hero-status {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            background: var(--color-bg-tertiary);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--glass-border);
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-xl);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-lg);
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .skill-item:nth-child(1) { animation-delay: 0.1s; }
+        .skill-item:nth-child(2) { animation-delay: 0.2s; }
+        .skill-item:nth-child(3) { animation-delay: 0.3s; }
+        .skill-item:nth-child(4) { animation-delay: 0.4s; }
+        .skill-item:nth-child(5) { animation-delay: 0.5s; }
+        .skill-item:nth-child(6) { animation-delay: 0.6s; }
+        .skill-item:nth-child(7) { animation-delay: 0.7s; }
+        .skill-item:nth-child(8) { animation-delay: 0.8s; }
+
+        .skill-item:hover {
+            background: var(--color-accent-purple);
+            color: var(--color-bg-primary);
+            border-color: var(--color-accent-purple);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(172, 153, 255, 0.3);
+        }
+
+        .skill-text {
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        .skill-item:hover .skill-text {
+            color: var(--color-bg-primary);
+        }
+
+        .skill-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: var(--color-accent-green);
+            color: var(--color-bg-primary);
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover .skill-icon {
+            transform: rotate(45deg);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .project-card {
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-accent-purple);
+            box-shadow: 0 8px 25px rgba(172, 153, 255, 0.2);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .project-description {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-md);
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+            margin-bottom: var(--space-md);
+        }
+
+        .tech-tag {
+            padding: 4px var(--space-sm);
+            background: var(--color-bg-secondary);
+            color: var(--color-accent-purple);
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            color: var(--color-accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--color-accent-green);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: var(--color-text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: var(--color-accent-purple);
+            border-color: var(--color-accent-purple);
+            transform: translateY(-2px);
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--color-accent-green);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                top: var(--space-md);
+                width: calc(100% - 2 * var(--space-md));
+            }
+
+            .nav-menu {
+                gap: 4px;
+            }
+
+            .nav-link {
+                padding: var(--space-xs) var(--space-sm);
+                font-size: 12px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding-left: var(--space-md);
+                padding-right: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                Available for projects
+            </div>
+            <h1 class="hero-title">Hello there! Giardap here!</h1>
+            <h2 class="hero-subtitle">Blockchain Developer & Security Researcher</h2>
+            <p class="hero-description">
+                I'm a passionate developer who builds secure applications and explores vulnerabilities in software systems. 
+                Currently focused on Solana development and creating tools that bridge complex technology with user-friendly interfaces.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.125rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-lg);">
+                    I'm a developer focused on building secure applications and conducting security research. My work spans blockchain development, 
+                    vulnerability assessment, and creating tools that solve real problems. I believe in responsible disclosure and contributing to 
+                    the security community through research and open-source projects.
+                </p>
+                <p style="font-size: 1.125rem; color: var(--color-text-secondary); line-height: 1.6;">
+                    With expertise in the Solana ecosystem, smart contract development, and cybersecurity research, I create innovative solutions 
+                    that prioritize both functionality and security.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-text">Blockchain Development</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">Solana Ecosystem Expert</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">Security Research</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">Smart Contract Engineering</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">TypeScript/JavaScript</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">Swift/SwiftUI</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">React/Redux</span>
+                    <span class="skill-icon">+</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-text">Discord Bot Development</span>
+                    <span class="skill-icon">+</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">PadraigAIO</h3>
+                    <p class="project-description">
+                        A comprehensive Solana trading suite built as a Discord plugin. Features real-time market data, 
+                        automated token creation, smart contract analysis, and advanced trading algorithms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Solana</span>
+                        <span class="tech-tag">Discord</span>
+                        <span class="tech-tag">Web3</span>
+                    </div>
+                    <a href="https://github.com/giardap/PadraigAIO" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Ring Referral System</h3>
+                    <p class="project-description">
+                        Automated referral system for Ring services with advanced anti-detection capabilities. 
+                        Features proxy rotation, intelligent session management, and automated account creation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Web Scraping</span>
+                        <span class="tech-tag">Proxy Management</span>
+                    </div>
+                    <a href="https://github.com/giardap/Ring" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Unruggable.meme</h3>
+                    <p class="project-description">
+                        A DeFi platform on Starknet focused on creating rugpull-resistant meme tokens. 
+                        Features automatic liquidity locks, community governance, and smart contract security mechanisms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Cairo</span>
+                        <span class="tech-tag">Starknet</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">DeFi</span>
+                    </div>
+                    <a href="https://github.com/giardap/unruggable.meme" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">PadraigAIO macOS</h3>
+                    <p class="project-description">
+                        Native macOS application for Solana trading and portfolio management. Built with Swift and SwiftUI, 
+                        featuring real-time market data and automated trading strategies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">macOS</span>
+                        <span class="tech-tag">Solana</span>
+                    </div>
+                    <a href="https://github.com/giardap/PadraigAIO-MacOS" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Ven-Pump</h3>
+                    <p class="project-description">
+                        Enhanced Discord client modification with 100+ built-in plugins. Features advanced plugin architecture, 
+                        trading integrations, and UI enhancements built with TypeScript and React.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Discord</span>
+                        <span class="tech-tag">Electron</span>
+                    </div>
+                    <a href="https://github.com/giardap/ven-pump" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">AI-Pump</h3>
+                    <p class="project-description">
+                        Intelligent Discord bot for cryptocurrency trading with AI-powered market analysis. 
+                        Features sentiment analysis, price prediction models, and automated trading decisions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Discord</span>
+                        <span class="tech-tag">Trading</span>
+                    </div>
+                    <a href="https://github.com/giardap/AI-Pump" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div style="max-width: 600px; margin: 0 auto var(--space-xl); text-align: center;">
+                <p style="font-size: 1.125rem; color: var(--color-text-secondary);">
+                    I'm always interested in discussing new opportunities, innovative projects, and collaborations in the blockchain space.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://github.com/giardap" class="contact-item" target="_blank">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="mailto:padraigm27@gmail.com" class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation tracking
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-100px 0px -60% 0px'
+        });
+
+        sections.forEach(section => {
+            navObserver.observe(section);
+        });
+    </script>
+</body>
+</html>
