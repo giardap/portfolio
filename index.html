@@ -836,6 +836,15 @@
                 visibility: visible !important;
                 opacity: 1 !important;
                 transform: none !important;
+                justify-content: center !important;
+            }
+            
+            .nav-container {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: calc(100% - 2rem) !important;
+                max-width: 600px !important;
             }
             
             .hero-content {
@@ -856,6 +865,31 @@
             section {
                 padding: 4rem 0 !important;
             }
+        }
+        
+        /* FIX FOCUS OUTLINE ISSUES */
+        .nav-link:focus,
+        .dock-item:focus,
+        .nav-link:focus-visible,
+        .dock-item:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+        
+        .nav-link:focus .nav-icon svg,
+        .dock-item:focus svg {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        /* Remove all focus states that cause purple boxes */
+        *:focus {
+            outline: none !important;
+        }
+        
+        *:focus-visible {
+            outline: 2px solid transparent !important;
         }
         
         /* CRITICAL MOBILE FIXES - INLINE TO FORCE OVERRIDE */
