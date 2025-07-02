@@ -18,19 +18,22 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link active"><span class="nav-icon"></span>Home</a>
+                    <a href="#home" class="nav-link active"><span class="nav-icon"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link"><span class="nav-icon"></span>About</a>
+                    <a href="#about" class="nav-link"><span class="nav-icon"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link"><span class="nav-icon"></span>Projects</a>
+                    <a href="#projects" class="nav-link"><span class="nav-icon"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link"><span class="nav-icon"></span>Experience</a>
+                    <a href="#experience" class="nav-link"><span class="nav-icon"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link"><span class="nav-icon"></span>Contact</a>
+                    <a href="#research" class="nav-link"><span class="nav-icon"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><span class="nav-icon"></span></a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -167,13 +170,13 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Ring Referral System</h3>
-                            <p>Automated referral system for Ring services with advanced anti-detection capabilities. Features proxy rotation, intelligent session management, and automated account creation. Built with Python and Selenium for reliable, undetected operation.</p>
+                            <h3>Ring Referral Abuser</h3>
+                            <p>Security research tool to demonstrate referral spoofing vulnerabilities in Ring's Neighbors app. Automated referral generation by intercepting and replaying network requests with tools like Charles Proxy and Burp Suite. Cross-platform Python implementation supporting both jailbroken iOS and standard network analysis methods. Responsibly disclosed through HackerOne - Ring has since patched the vulnerability and shut down the referral system.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Automation</span>
-                                <span class="tech-tag">Web Scraping</span>
-                                <span class="tech-tag">Proxy Management</span>
+                                <span class="tech-tag">Python 2.7/3.x</span>
+                                <span class="tech-tag">Security Research</span>
+                                <span class="tech-tag">Vulnerability Assessment</span>
+                                <span class="tech-tag">Responsible Disclosure</span>
                             </div>
                             <div class="project-stats">
                                 <span class="stat-item">
@@ -389,6 +392,158 @@
             </div>
         </section>
 
+        <!-- Security Research Section -->
+        <section id="research" class="research">
+            <div class="container">
+                <h2 class="section-title">Security Research & Ethical Hacking</h2>
+                
+                <!-- FreeRice Project -->
+                <div class="research-project">
+                    <div class="project-header">
+                        <div class="project-emoji">🍚</div>
+                        <div class="project-meta">
+                            <h3>Distributed Computing for Global Impact: FreeRice Network Initiative</h3>
+                            <div class="project-details">
+                                <span class="project-year">2018</span>
+                                <span class="project-type">High School Project</span>
+                                <span class="project-impact">20+ Million Grains of Rice Donated</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>While investigating network security in high school, I discovered a critical misconfiguration in our district's file server (<code>//K10-FS01-ESX</code>) where student accounts had read/write access to virtually all network resources, including teacher and counselor files. After responsibly reporting this to IT, I developed a creative proof-of-concept that turned this vulnerability into a force for good.</p>
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Network Reconnaissance:</strong> Mapped user directory structure and permission hierarchy across district infrastructure</li>
+                            <li><strong>PowerShell Automation:</strong> Developed mass-deployment script targeting startup folders using predictable user ID patterns (graduation year + sequential numbering)</li>
+                            <li><strong>Stealth Operations:</strong> Leveraged existing IT batch script patterns for camouflage; deployed background Python processes with no UI presence</li>
+                            <li><strong>Anti-Detection Measures:</strong> Implemented proxy rotation and timing delays to bypass FreeRice.com's bot detection systems</li>
+                            <li><strong>Python Web Automation:</strong> Created intelligent solver that processed math questions via HTTP requests and automated correct responses</li>
+                        </ul>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-icon">🌍</div>
+                            <div class="result-content">
+                                <h5>Global Recognition</h5>
+                                <p>Elevated school to #1 position on FreeRice.com's all-time leaderboard</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-icon">🎯</div>
+                            <div class="result-content">
+                                <h5>Humanitarian Impact</h5>
+                                <p><strong>20+ million grains of rice donated</strong> to combat world hunger</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-icon">⚡</div>
+                            <div class="result-content">
+                                <h5>Massive Scale</h5>
+                                <p>Operated undetected across 5,000+ district computers, executing on every student login</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-icon">🛡️</div>
+                            <div class="result-content">
+                                <h5>No System Disruption</h5>
+                                <p>Designed for minimal resource usage and transparent operation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ring Referral Abuser -->
+                <div class="research-project">
+                    <div class="project-header">
+                        <div class="project-emoji">🔐</div>
+                        <div class="project-meta">
+                            <h3>Ring Referral Vulnerability Research: Automated Exploit Development</h3>
+                            <div class="project-details">
+                                <span class="project-year">2019</span>
+                                <span class="project-type">Security Research & Responsible Disclosure</span>
+                                <span class="project-impact">Vulnerability Patched & System Shutdown</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>Developed a security research tool to demonstrate referral spoofing vulnerabilities in Ring's Neighbors app referral system. The automated exploit revealed critical flaws in referral validation that allowed unlimited generation of fraudulent referral credits through network request replay techniques.</p>
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Network Interception:</strong> Used Charles Proxy and Burp Suite to capture and analyze Ring app network traffic patterns</li>
+                            <li><strong>Request Replay Automation:</strong> Built Python scripts to automate referral generation by replaying intercepted network requests with modified parameters</li>
+                            <li><strong>Cross-Platform Support:</strong> Implemented both jailbroken iOS integration and standard network analysis methods for broader compatibility</li>
+                            <li><strong>Vulnerability Assessment:</strong> Systematically tested referral validation mechanisms to identify bypasses and edge cases</li>
+                            <li><strong>Python 2.7/3.x Compatibility:</strong> Ensured cross-version compatibility for maximum accessibility across different environments</li>
+                        </ul>
+                    </div>
+
+                    <div class="disclosure-process">
+                        <h4>Responsible Disclosure Process</h4>
+                        <div class="disclosure-steps">
+                            <div class="disclosure-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>HackerOne Submission</h5>
+                                    <p>Submitted detailed vulnerability report through Ring's official HackerOne bug bounty program with full technical documentation</p>
+                                </div>
+                            </div>
+                            <div class="disclosure-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5>Proof-of-Concept Demonstration</h5>
+                                    <p>Provided working exploit code and comprehensive technical analysis demonstrating the security impact</p>
+                                </div>
+                            </div>
+                            <div class="disclosure-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>Successful Resolution</h5>
+                                    <p>Ring acknowledged the vulnerability, implemented security patches, and ultimately shut down the entire referral system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why These Matter -->
+                <div class="research-significance">
+                    <h3>🎯 Why These Projects Matter</h3>
+                    <div class="significance-grid">
+                        <div class="significance-item">
+                            <h4>Technical Sophistication</h4>
+                            <p>Advanced scripting, network analysis, and systems thinking applied creatively from a young age</p>
+                        </div>
+                        <div class="significance-item">
+                            <h4>Ethical Leadership</h4>
+                            <p>Consistent pattern of using technical skills for positive impact and following responsible disclosure practices</p>
+                        </div>
+                        <div class="significance-item">
+                            <h4>Real-World Impact</h4>
+                            <p>From feeding people globally to hardening enterprise security infrastructure</p>
+                        </div>
+                        <div class="significance-item">
+                            <h4>Innovation Mindset</h4>
+                            <p>Ability to see opportunities where others see problems, turning vulnerabilities into solutions</p>
+                        </div>
+                        <div class="significance-item">
+                            <h4>Professional Growth</h4>
+                            <p>Foundation for current work in cybersecurity research and blockchain security analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
@@ -429,6 +584,9 @@
                 <span class="dock-icon"></span>
             </a>
             <a href="#experience" class="dock-item" title="Experience">
+                <span class="dock-icon"></span>
+            </a>
+            <a href="#research" class="dock-item" title="Research">
                 <span class="dock-icon"></span>
             </a>
             <a href="#contact" class="dock-item" title="Contact">
@@ -532,6 +690,7 @@
                 '#about': 'Globe', 
                 '#projects': 'StackSimple',
                 '#experience': 'GraduationCap',
+                '#research': 'ShieldCheck',
                 '#contact': 'At'
             };
             
@@ -620,6 +779,7 @@
                 '#about': 'Globe', 
                 '#projects': 'StackSimple',
                 '#experience': 'GraduationCap',
+                '#research': 'ShieldCheck',
                 '#contact': 'At'
             };
             
