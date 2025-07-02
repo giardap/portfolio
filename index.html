@@ -828,6 +828,302 @@
     </script>
 
     <style>
+        /* CRITICAL MOBILE FIXES - INLINE TO FORCE OVERRIDE */
+        @media (max-width: 768px) {
+            /* FORCE HIDE NAVBAR ON MOBILE */
+            .navbar {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                transform: translateY(-200px) !important;
+            }
+            
+            /* Fix main content positioning */
+            main {
+                padding-top: 0 !important;
+            }
+            
+            /* Fix hero section layout */
+            .hero-content {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 1rem !important;
+                align-items: center !important;
+            }
+            
+            .hero-image {
+                order: 1 !important;
+                width: auto !important;
+                margin-bottom: 1rem !important;
+                flex-shrink: 0 !important;
+            }
+            
+            .hero-text {
+                order: 2 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+            
+            .profile-circle {
+                width: 80px !important;
+                height: 80px !important;
+                margin: 0 auto !important;
+                flex-shrink: 0 !important;
+            }
+            
+            .hero-logo {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: contain !important;
+            }
+            
+            /* Fix typography scaling */
+            .hero h1 {
+                font-size: 1.8rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .hero h2 {
+                font-size: 1.1rem !important;
+                line-height: 1.3 !important;
+                margin-bottom: 1rem !important;
+            }
+            
+            .hero p {
+                font-size: 0.9rem !important;
+                line-height: 1.4 !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            /* Fix hero buttons */
+            .hero-buttons {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+                width: 100% !important;
+            }
+            
+            .hero-buttons .btn {
+                width: 100% !important;
+                justify-content: center !important;
+                padding: 0.75rem 1rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            /* Container adjustments */
+            .container {
+                padding: 0 1rem !important;
+            }
+            
+            /* Section spacing */
+            section {
+                padding: 2rem 0 !important;
+            }
+            
+            /* Fix Research Section Mobile Layout */
+            #research {
+                padding: 2.5rem 0 !important;
+            }
+            
+            .research-project {
+                margin-bottom: 2.5rem !important;
+                padding: 1.5rem !important;
+                background: var(--color-bg-secondary) !important;
+                border-radius: 12px !important;
+                border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            }
+            
+            .project-header {
+                margin-bottom: 1.2rem !important;
+            }
+            
+            .project-meta h3 {
+                font-size: 1.1rem !important;
+                margin-bottom: 0.5rem !important;
+                line-height: 1.3 !important;
+            }
+            
+            .project-description {
+                margin-bottom: 1.2rem !important;
+            }
+            
+            .project-description p {
+                font-size: 0.85rem !important;
+                line-height: 1.5 !important;
+                color: var(--color-text-secondary) !important;
+            }
+            
+            /* Fix Disclosure Process - Horizontal Mobile Layout */
+            .disclosure-process {
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .disclosure-steps {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 0.75rem !important;
+            }
+            
+            .disclosure-step {
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: var(--color-bg-tertiary) !important;
+                padding: 0.75rem !important;
+                border-radius: 8px !important;
+                gap: 0.75rem !important;
+                min-height: auto !important;
+            }
+            
+            .step-number {
+                width: 28px !important;
+                height: 28px !important;
+                background: var(--color-accent-purple) !important;
+                color: white !important;
+                border-radius: 50% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-weight: 600 !important;
+                font-size: 0.8rem !important;
+                flex-shrink: 0 !important;
+                margin-bottom: 0 !important;
+            }
+            
+            .step-content {
+                flex: 1 !important;
+                min-width: 0 !important;
+            }
+            
+            .step-content h5 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0.25rem !important;
+                color: var(--color-text-primary) !important;
+                line-height: 1.2 !important;
+            }
+            
+            .step-content p {
+                font-size: 0.8rem !important;
+                line-height: 1.3 !important;
+                color: var(--color-text-secondary) !important;
+                margin: 0 !important;
+            }
+            
+            /* Fix Results Grid - Better Mobile Layout */
+            .results-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 0.5rem !important;
+                margin: 1rem 0 !important;
+            }
+            
+            .result-item {
+                background: var(--color-bg-tertiary) !important;
+                padding: 0.8rem 0.5rem !important;
+                border-radius: 8px !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                min-height: 80px !important;
+            }
+            
+            .result-icon {
+                font-size: 1.2rem !important;
+                margin-bottom: 0.4rem !important;
+                display: block !important;
+                color: var(--color-accent-purple) !important;
+            }
+            
+            .result-content {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            
+            .result-content h5 {
+                font-size: 0.75rem !important;
+                margin-bottom: 0.2rem !important;
+                color: var(--color-text-primary) !important;
+                line-height: 1.1 !important;
+                font-weight: 600 !important;
+            }
+            
+            .result-content p {
+                font-size: 0.65rem !important;
+                line-height: 1.2 !important;
+                color: var(--color-text-secondary) !important;
+                margin: 0 !important;
+            }
+            
+            /* Fix Technical Details */
+            .technical-details {
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .technical-details ul {
+                padding-left: 1rem !important;
+                margin: 0 !important;
+            }
+            
+            .technical-details li {
+                margin-bottom: 0.75rem !important;
+                font-size: 0.85rem !important;
+                line-height: 1.4 !important;
+            }
+            
+            /* Fix Significance Grid */
+            .significance-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 0.5rem !important;
+            }
+            
+            .significance-item {
+                background: var(--color-bg-tertiary) !important;
+                padding: 0.75rem !important;
+                border-radius: 8px !important;
+                text-align: left !important;
+            }
+            
+            .significance-item h4 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0.25rem !important;
+                color: var(--color-accent-purple) !important;
+            }
+            
+            .significance-item p {
+                font-size: 0.8rem !important;
+                line-height: 1.3 !important;
+                color: var(--color-text-secondary) !important;
+                margin: 0 !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Extra small phone fixes */
+            .profile-circle {
+                width: 70px !important;
+                height: 70px !important;
+            }
+            
+            .hero h1 {
+                font-size: 1.6rem !important;
+            }
+            
+            .container {
+                padding: 0 0.75rem !important;
+            }
+            
+            .result-content h5 {
+                font-size: 0.75rem !important;
+            }
+            
+            .result-content p {
+                font-size: 0.65rem !important;
+            }
+        }
+
         /* Icon styling */
         .nav-icon {
             display: inline-flex;
