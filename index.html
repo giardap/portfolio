@@ -828,8 +828,38 @@
     </script>
 
     <style>
+        /* DESKTOP PERFORMANCE OPTIMIZATION */
+        @media screen and (min-width: 769px) {
+            /* Ensure no mobile styles affect desktop */
+            .navbar {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            
+            .hero-content {
+                flex-direction: row !important;
+                text-align: left !important;
+                gap: 2rem !important;
+            }
+            
+            .hero-image {
+                order: 2 !important;
+                margin-bottom: 0 !important;
+            }
+            
+            .hero-text {
+                order: 1 !important;
+            }
+            
+            section {
+                padding: 4rem 0 !important;
+            }
+        }
+        
         /* CRITICAL MOBILE FIXES - INLINE TO FORCE OVERRIDE */
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             /* FORCE HIDE NAVBAR ON MOBILE */
             .navbar {
                 display: none !important;
@@ -1114,7 +1144,7 @@
             }
         }
         
-        @media (max-width: 480px) {
+        @media screen and (max-width: 480px) {
             /* Extra small phone fixes */
             .profile-circle {
                 width: 70px !important;
